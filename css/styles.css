@@ -244,3 +244,73 @@ legend{
     transition: border 0.08s;
     position: relative;
 }
+
+
+
+:root{
+    --cor-primaria-botaovoltar: rgb(255, 255, 255);
+    --cor-hover-botaovoltar: black; 
+    --cor-secundaria-botaovoltar: rgb(69, 13, 66);
+}
+.botaovoltar{
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    transition: background .3s;
+    border-radius: 8px;
+}
+.botaovoltar{
+    background-color: var(--cor-primaria-botaovoltar);
+    outline: none;
+    color: var(--cor-secundaria-botaovoltar);
+}
+
+
+
+/*Carousel*/
+
+.carousel{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousels{
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+.carousels input{
+    display: none;
+}
+
+.carousell{
+    width: 25%;
+    position:relative;
+}
+
+.carousell img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position:absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-bnt{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.manual-bnt:not(:last-child){
+    margin-right: 40px;
+}
